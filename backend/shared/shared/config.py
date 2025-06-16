@@ -19,13 +19,12 @@ limiter = Limiter(key_func=get_remote_address)
 RSA_PRIVATE_KEY = load_key(PRIVATE_KEY_PATH)
 RSA_PUBLIC_KEY = load_key(PUBLIC_KEY_PATH)
 
-
 load_dotenv(dotenv_path=ENV_DIR)
 
 
 # SERVICES VARIABLES
-AUTH_SERVICE_URL = os.getenv("AUTH_SERVICE_URL", "http://localhost:8001")
-USER_SERVICE_URL = os.getenv("USERS_SERVICE_URL", "http://localhost:8002")
+AUTH_V1_SERVICE_URL = os.getenv("AUTH_SERVICE_URL", "http://localhost:8001")
+USER_V1_SERVICE_URL = os.getenv("USERS_SERVICE_URL", "http://localhost:8002")
 FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3000")
 BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 

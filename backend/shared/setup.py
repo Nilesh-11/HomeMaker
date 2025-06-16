@@ -10,5 +10,6 @@ setup(
         'psycopg2-binary',
         'slowapi',
         'fastapi',
+        'PyJWT',
     ]
 )
